@@ -35,9 +35,9 @@ cat_pics = ["https://images.pexels.com/photos/1643456/pexels-photo-1643456.jpeg?
 
 20.times do
   Item.create!(
-    title: Faker::Artist.name
-    description: Faker::Lorem.paragraphs
-    price: rand(1..50)
+    title: Faker::Artist.name,
+    description: Faker::Lorem.paragraphs,
+    price: rand(1..50),
     image_url: cat_pics.sample
   )
 end
